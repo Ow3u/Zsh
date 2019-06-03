@@ -12,7 +12,8 @@ alias mv='mv -i'
 alias mkdir='mkdir -p'
 
 # historyでタイムスタンプを表示する
-alias history='fc -il 1'
+#alias history='fc -il 1'
+alias history='fc -t "%Y-%m-%d %T:" -il 1'
 
 # Chromeの起動、エラー非表示
 alias chrome='/opt/google/chrome/chrome 2>/dev/null'

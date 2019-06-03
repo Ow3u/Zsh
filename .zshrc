@@ -12,17 +12,8 @@ do
     source "$f"
 done
 
-# Virutalenvwrapper
-# enables the virtualenvwrapper command
-venvwrapper="/usr/share/virtualenvwrapper/virtualenvwrapper.sh"
-if [ -f $venvwrapper ]; then
-    source "$venvwrapper"
-fi
-
-# 環境変数
-# Note: .profileに定義されている環境変数も反映されるのでbashも
-# 使う予定があるならそちらに新しいパスを通すのも考慮する
-
-# NeoVim - dein
-export XDG_CONFIG_HOME=$HOME/.config
+# 環境変数 - PATH, etc.
+# Environmental variables are defined in, ~/.profile and/or ~/.zprofile 
+# which will be sourced once upon login;
+# Login shell should be enabled for Gnome Terminal in preferences.
 

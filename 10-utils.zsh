@@ -10,6 +10,7 @@ colors
 
 # ヒストリの設定
 HISTFILE=~/.zsh_history
+HIST_STAMPS="yyyy-mm-dd hh:MM:SS "
 HISTSIZE=1000000
 SAVEHIST=1000000
 
