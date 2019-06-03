@@ -1,3 +1,9 @@
 [submodule "plugins/oh-my-zsh"]
 	path = plugins/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "plugins/zsh-autosuggestions"]
+	path = plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "plugins/zsh-completions"]
+	path = plugins/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
