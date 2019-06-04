@@ -17,9 +17,9 @@ precmd () {
 
     # Virtualenv
     PYTHON_VENV=""
-    PYTHON_VERSION="py:$(python -c 'import platform;print(platform.python_version())')"
     if [ -n "$VIRTUAL_ENV" ]; then
-        PYTHON_VENV=":`basename \"$VIRTUAL_ENV\"`"
+        PYTHON_VERSION=$(python -c 'import platform;print(platform.python_version())')
+        PYTHON_VENV="(py:${PYTHON_VERSION}:`basename ${VIRTUAL_ENV}`) "
     fi
 
     # Execution timer
@@ -30,7 +30,7 @@ precmd () {
         unset TIMER
     fi
 
-    PROMPT="%F{red}[$(shrink_path -f)] %F{magenta}[%n@%m] %F{cyan}(${PYTHON_VERSION}${PYTHON_VENV}) ${vcs_info_msg_0_}
+    PROMPT="%F{red}[$(shrink_path -f)] %F{magenta}[%n@%m] %F{cyan}${PYTHON_VENV}${vcs_info_msg_0_}
 %F{blue}%B%(!.#.$)%b%f "
 }
 
