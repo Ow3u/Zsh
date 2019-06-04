@@ -30,7 +30,7 @@ precmd () {
         unset TIMER
     fi
 
-    PROMPT="%F{red}[$(shrink_path -f)] %F{magenta}[%n@%m] %F{cyan}${PYTHON_VENV}${vcs_info_msg_0_}
+    PROMPT="%F{green}[$(shrink_path -f)] %F{magenta}[%n@%m] %F{red}${PYTHON_VENV}${vcs_info_msg_0_}
 %F{blue}%B%(!.#.$)%b%f "
 }
 
