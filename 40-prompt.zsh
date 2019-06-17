@@ -31,6 +31,6 @@ precmd () {
     fi
 
     PROMPT="%F{green}[$(shrink_path -f)] %F{red}%n@%m %F{magenta}${PYTHON_VENV}${vcs_info_msg_0_}
-%F{blue}%(!.#.$) "
+%F{blue}%(!.#.$)%f "
 }
 
